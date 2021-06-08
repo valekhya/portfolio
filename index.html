@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- JQuery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="nav-container">
+        <svg fill="#000000" width="52" height="52" version="1.1" id="lni_lni-menu"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+            <g>
+                <path d="M61,30.3H3c-1,0-1.8,0.8-1.8,1.8S2,33.8,3,33.8h58c1,0,1.8-0.8,1.8-1.8S62,30.3,61,30.3z" />
+                <path d="M61,47.9H3c-1,0-1.8,0.8-1.8,1.8S2,51.4,3,51.4h58c1,0,1.8-0.8,1.8-1.8S62,47.9,61,47.9z" />
+                <path d="M3,16.1h58c1,0,1.8-0.8,1.8-1.8S62,12.6,61,12.6H3c-1,0-1.8,0.8-1.8,1.8S2,16.1,3,16.1z" />
+            </g>
+        </svg>
+
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">My skills</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact-me">Contact me!</a></li>
+        </ul>
+    </div>
+
+    <!-- HOME -->
+    <section id="hero">
+        <img src="./images/alekhya.jpg" alt="My Image" id="profile-image">
+        <p class="bold">Alekhya V Veerubhotla</p>
+        <p>Namesty | Hello | Bonjour </p>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about-me">
+        <h2>About me</h2>
+        <p>
+            Hello, I'm Alekhya! I'm a <span class="animate-keywords">frontend developer</span> working at <span
+                class="animate-keywords">Primus Software Development</span>. I work on frontend
+            development and making the UI look and feel awesome.
+        </p>
+        <p>Before joining Primus, I was a research aspirant with a <span>Masters of Engineering in
+                Nanotechnology</span> from
+            Amity University, Noida, India. I completed my master thesis from <span
+                class="animate-keywords">Polytechnique Montreal, University of
+                Montreal</span> and it was my best internship ever. My bachelor thesis was from <span
+                class="animate-keywords"> National Physical Laboratory
+                (NPL), Delhi</span> and I had a great time there too. At both my internships, I prepared some
+            **secret
+            nanoparticles** which could be used to enhance magnetic & chemical properties of the materials.
+        </p>
+        <p>I <span class="animate-keywords">love music & travelling</span> . In my free time, I like to sing and
+            play my guitar. Although I'm not a professional, I can sing pretty
+            decent. You may checkout my videos on Youtube. I also like to explore cultures while travelling.
+        </p>
+        <p>I am trying to self learn French & I hope to speak it fluently someday!</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="flex-row">
+            <div class="card">
+                <div class="icon">
+                    <svg fill="#000000" width="52" height="52" version="1.1" id="lni_lni-code" x="0px" y="0px"
+                        viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                        <g>
+                            <path
+                                d="M18.6,16c0.6-0.7,0.6-1.8-0.1-2.5c-0.7-0.6-1.8-0.6-2.5,0.1L2.4,28.9c-1.5,1.7-1.5,4.4,0,6.1L16,50.4
+                   c0.3,0.4,0.8,0.6,1.3,0.6c0.4,0,0.8-0.1,1.2-0.4c0.7-0.6,0.8-1.8,0.1-2.5L5,32.7c-0.3-0.4-0.3-1.1,0-1.5L18.6,16z" />
+                            <path
+                                d="M61.6,28.9L48,13.6c-0.6-0.7-1.7-0.8-2.5-0.1c-0.7,0.6-0.8,1.7-0.1,2.5L59,31.3c0.3,0.4,0.3,1.1,0,1.5L45.4,48
+                   c-0.6,0.7-0.6,1.8,0.1,2.5c0.3,0.3,0.8,0.4,1.2,0.4c0.5,0,1-0.2,1.3-0.6l13.6-15.3C63.1,33.3,63.1,30.7,61.6,28.9z" />
+                            <path d="M38,14c-0.9-0.3-1.9,0.2-2.2,1.1l-11,32.7C24.6,48.7,25,49.7,26,50c0.2,0.1,0.4,0.1,0.6,0.1c0.7,0,1.4-0.5,1.7-1.2l11-32.7
+                   C39.4,15.3,39,14.3,38,14z" />
+                        </g>
+                    </svg>
+                </div>
+                <p class="heading">HTML/CSS</p>
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to
+                    be
+                    displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets
+                    and
+                    scripting languages such as JavaScript.</p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg fill="#000000" width="52" height="52" version="1.1" id="lni_lni-angular" x="0px" y="0px"
+                        viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                        <path d="M26.8,33.7h10.6L32,21L26.8,33.7L26.8,33.7z M32,1L3.3,11.3l4.5,38.2L32,63l24.4-13.5l4.4-38.2L32,1z M50,48.2h-6.8l-3.5-9
+                        H24.4l-3.7,9H14L32,7.9L50,48.2z" />
+                    </svg>
+                </div>
+                <p class="heading">Angular</p>
+                <p>Angular is a TypeScript-based open-source web application framework led by the Angular Team at
+                    Google and by a community of individuals and corporations. Angular is a complete rewrite from
+                    the
+                    same team that built AngularJS.</p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <svg fill="#000000" viewBox="0 0 50 50" width="50px" height="50px">
+                        <path
+                            d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z" />
+                    </svg>
+                </div>
+                <p class="heading">.NET/ .NET Core</p>
+                <p>.NET is a free and open-source, managed computer software framework for Windows, Linux, and
+                    macOS operating systems. It is a cross-platform successor to .NET Framework. The project is
+                    primarily developed by Microsoft employees by way of the .NET Foundation.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="card" id="projects">
+        <h2>Projects Coming Soon...</h2>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section id="contact-me">
+        <h2>Like what you saw?</h2>
+        <form class="card" action="" id="contact-me-form">
+            <h3>Contact me</h3>
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea name="description" id="description" cols="30" rows="10"
+                placeholder="Enter your text here..."></textarea>
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <!-- Popmotion -->
+    <script src="./node_modules/popmotion/dist/popmotion.global.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
