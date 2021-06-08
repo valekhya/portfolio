@@ -64,7 +64,21 @@ section {
     font-weight: 900;
 }
 // *********************************************************
+#menu-icon {
+	svg{
+		width: 6rem;
+	}
+	svg:hover {
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+	}
+	width: 6rem;
+    position: fixed;
+    z-index: 10;
+    top: -24rem;
+    right: 0;
+}
 .nav-container {
+    mix-blend-mode: hard-light;
 	z-index: 10;
 	position: fixed;
     top: 0;
@@ -130,7 +144,7 @@ section {
 
 //Projects**************
 #projects {
-	height: 50vh;
+	height: 100%;
 	display: grid;
 	place-items: center;
 	opacity: .7;
@@ -152,7 +166,8 @@ section {
 // Skills *******************
 #skills {
 	background: var(--color-primary);
-	height: fit-content;
+	display: grid;
+	height: 80%;
 	.flex-row {
 		display: flex;
 		flex: 1 1 10rem;
@@ -185,7 +200,7 @@ section {
 // Contact me**********************
 #contact-me {
 	clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
-	height: fit-content;
+	height: 80%;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
