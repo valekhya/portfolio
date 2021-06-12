@@ -87,7 +87,7 @@ section h2 {
   position: fixed;
   z-index: 10;
   top: -24rem;
-  left: calc(100% - 6rem);
+  left: calc(100% - 7.5rem);
 }
 
 #menu-icon svg {
