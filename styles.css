@@ -58,6 +58,9 @@ li a {
 section {
   padding: 2rem 4rem;
   min-height: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 section h2 {
@@ -83,7 +86,6 @@ section h2 {
 }
 
 #menu-icon {
-  width: 5rem;
   position: fixed;
   z-index: 10;
   top: -24rem;
@@ -91,7 +93,7 @@ section h2 {
 }
 
 #menu-icon svg {
-  width: 6rem;
+  width: 6em;
 }
 
 #menu-icon svg:hover {
@@ -255,10 +257,11 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 4rem;
+          flex: 1 1 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -266,6 +269,10 @@ section h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: .5rem;
+}
+
+#contact-me h2 {
+  padding-top: 9rem;
 }
 
 #contact-me .card {

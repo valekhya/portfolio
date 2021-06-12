@@ -45,6 +45,7 @@ li a {
 section {
 	padding: 2rem 4rem;
 	min-height: 100%;
+	min-width: fit-content;
 	h2 {
 		font-size: 2rem;
 		text-transform: uppercase;
@@ -67,12 +68,11 @@ section {
 // *********************************************************
 #menu-icon {
 	svg{
-		width: 6rem;
+		width: 6em;
 	}
 	svg:hover {
         text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 	}
-	width: 5rem;
     position: fixed;
     z-index: 10;
     top: -24rem;
@@ -204,10 +204,15 @@ section {
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     display: flex;
-    flex-direction: row;
+    flex: 1 1 4rem;
+	flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 	padding-bottom: .5rem;
+
+	h2 {
+		padding-top: 9rem;
+	}
     .card {
         padding: 1rem 1.5rem;
         background-color: white;
