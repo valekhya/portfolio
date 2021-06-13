@@ -140,6 +140,14 @@ section {
 	#profile-image:hover {
 		transform: rotateY(180deg);
 	}
+
+	#social-icons img {
+		transition: transform .5s;
+	}
+
+	#social-icons img:hover {
+		transform: rotateX(360deg);
+	}
 }
 
 //Projects**************

@@ -178,6 +178,18 @@ section h2 {
           transform: rotateY(180deg);
 }
 
+#hero #social-icons img {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#hero #social-icons img:hover {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
 #projects {
   display: -ms-grid;
   display: grid;
