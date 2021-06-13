@@ -47,7 +47,7 @@ section {
 	min-height: 100%;
 	min-width: fit-content;
 	h2 {
-		font-size: 2rem;
+		font-size: calc(1vw + 1rem);
 		text-transform: uppercase;
 		letter-spacing: 1rem;
         text-shadow: 0px 0px 6px #cdcdcd;
@@ -125,7 +125,7 @@ section {
 	padding: 4rem;
 	display: block;
 	text-align: center;
-    font-size: 2.5rem;
+    font-size: calc(1.5vw + 1rem);
 	text-transform: capitalize;
 	letter-spacing: .5rem;
     transition: 1s;
@@ -152,7 +152,7 @@ section {
 //About me*************
 #about-me {
 	p {
-        font-size: 1rem;
+        font-size: medium;
         word-break: break-word;
         overflow: wrap;
         margin: auto;
@@ -172,7 +172,7 @@ section {
 	}
 	.card {
 		margin: 1rem auto;
-		width: clamp(10rem, 35ch, 20rem);
+		max-width: 20rem;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
@@ -211,7 +211,7 @@ section {
 	padding-bottom: .5rem;
 
 	h2 {
-		padding-top: 9rem;
+		padding-top: 12rem;
 		padding-bottom: 4rem;
 	}
     .card {
@@ -234,3 +234,10 @@ section {
 		color: white;
     }
 }
+
+// *********MIXINS********************
+@media (max-width: 600px) {
+    section, #about-me p {
+        padding: 1rem;
+    }
+  }
