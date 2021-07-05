@@ -176,7 +176,6 @@ section h2 {
           animation: gradient 15s ease infinite;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 64%, 0 85%);
           clip-path: polygon(0 0, 100% 0, 100% 64%, 0 85%);
-  padding: 4rem;
   display: block;
   text-align: center;
   font-size: calc(1.5vw + 1rem);
@@ -308,7 +307,6 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 2rem;
 }
 
 #contact-me button {
