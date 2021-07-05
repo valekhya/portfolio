@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   font-family: 'Poppins', sans-serif !important;
@@ -39,7 +43,8 @@ body {
   }
 }
 
-input, textarea {
+input,
+textarea {
   padding: .5rem;
   margin: 1rem;
   font-family: 'Poppins', sans-serif !important;
@@ -57,7 +62,7 @@ li a {
 
 section {
   padding: 2rem 4rem;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -122,7 +127,7 @@ section h2 {
 
 .nav-container ul a {
   visibility: hidden;
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1rem);
   font-weight: bold;
   color: white;
 }
@@ -151,8 +156,8 @@ section h2 {
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 91%);
-          clip-path: polygon(0 0, 100% 0, 100% 66%, 0 91%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 64%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 64%, 0 85%);
   padding: 4rem;
   display: block;
   text-align: center;
@@ -183,11 +188,15 @@ section h2 {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+  font-size: 2rem;
 }
 
 #hero #social-icons img:hover {
   -webkit-transform: rotateX(360deg);
           transform: rotateX(360deg);
+  -webkit-box-shadow: 0px 0px 7px 3px palegreen;
+          box-shadow: 0px 0px 7px 3px palegreen;
+  border-radius: 100px;
 }
 
 #projects {
@@ -208,24 +217,6 @@ section h2 {
 #skills {
   color: white;
   background: var(--color-primary);
-  display: -ms-grid;
-  display: grid;
-}
-
-#skills .flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#skills .card {
-  margin: 1rem auto;
-  max-width: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,30 +224,34 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+#skills .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 18rem;
+          flex: 1 1 18rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills .skill-icons {
+  height: 10em;
+  margin: 3rem;
   -webkit-transition: .5s;
   transition: .5s;
-  color: white;
 }
 
-#skills .card .icon,
-#skills .card .heading, #skills .card svg {
-  font-size: 1.5rem;
-  fill: white;
-  place-self: center;
-  font-weight: 900;
-  letter-spacing: .5rem;
-  padding: .5rem 0;
-}
-
-#skills .card:hover {
-  background-color: #34287f;
-  box-shadow: 2px -1px 25px 2px rgba(255, 255, 255, 0.41);
-  -webkit-box-shadow: 2px -1px 25px 2px rgba(255, 255, 255, 0.41);
-  -moz-box-shadow: 2px -1px 25px 2px rgba(255, 255, 255, 0.41);
+#skills .skill-icons:hover {
+  height: 12em;
 }
 
 #contact-me {
@@ -314,7 +309,8 @@ section h2 {
 }
 
 @media (max-width: 600px) {
-  section, #about-me p {
+  section,
+  #about-me p {
     padding: 1rem;
   }
 }

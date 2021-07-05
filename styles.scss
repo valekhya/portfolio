@@ -3,13 +3,16 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	height: 100vh;
 	font-family: 'Poppins', sans-serif !important;
 	// background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	// background-size: 400% 400%;
 	// animation: gradient 15s ease infinite;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 :root {
 	--container: #e9ecef70;
@@ -27,9 +30,10 @@ body {
 	}
 }
 
-input, textarea {
-    padding: .5rem;
-    margin: 1rem;    
+input,
+textarea {
+	padding: .5rem;
+	margin: 1rem;
 	font-family: 'Poppins', sans-serif !important;
 }
 ul {
@@ -43,14 +47,15 @@ li a {
 
 // Utility classes******************************************
 section {
+	// scroll-snap-align: start ;
 	padding: 2rem 4rem;
-	min-height: 100%;
+	min-height: 100vh;
 	min-width: fit-content;
 	h2 {
 		font-size: calc(1vw + 1rem);
 		text-transform: uppercase;
 		letter-spacing: 1rem;
-        text-shadow: 0px 0px 6px #cdcdcd;
+		text-shadow: 0px 0px 6px #cdcdcd;
 	}
 }
 .bold {
@@ -59,43 +64,48 @@ section {
 .card {
 	background-color: var(--container);
 	padding: 1rem;
-    border-radius: 4px;
+	border-radius: 4px;
 }
 .animate-keywords {
-    color: #5c47d5;;
-    font-weight: 900;
+	color: #5c47d5;
+	font-weight: 900;
 }
 // *********************************************************
+// .container {
+// 	scroll-snap-type: y mandatory;
+// 	overflow-y: scroll;
+// 	height: 100vh;
+// }
 #menu-icon {
-	svg{
+	svg {
 		width: 6em;
 	}
 	svg:hover {
-        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+		text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 	}
-    position: fixed;
-    z-index: 10;
-    top: -24rem;
-    left: calc(100% - 7.5rem);
+	position: fixed;
+	z-index: 10;
+	top: -24rem;
+	left: calc(100% - 7.5rem);
 }
 .nav-container {
-    mix-blend-mode: hard-light;
+	mix-blend-mode: hard-light;
 	z-index: 10;
 	position: fixed;
-    top: 0;
+	top: 0;
 	width: 100%;
 	height: 100%;
 	clip-path: circle(4rem at calc(100% - 6rem) 5rem);
 	transition: .5s;
-	background-color:var(--color-primary);
+	background-color: var(--color-primary);
 	text-align: right;
 	padding: .5rem;
-    ul {
-        padding: 1.5rem;
-    }
+	ul {
+		padding: 1.5rem;
+	}
 	ul a {
 		visibility: hidden;
-        font-size: 1.5rem;
+		font-size: calc(1vw + 1rem);
 		font-weight: bold;
 		color: white;
 	}
@@ -121,14 +131,14 @@ section {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	clip-path: polygon(0 0, 100% 0, 100% 66%, 0 91%);
+	clip-path: polygon(0 0, 100% 0, 100% 64%, 0 85%);
 	padding: 4rem;
 	display: block;
 	text-align: center;
-    font-size: calc(1.5vw + 1rem);
+	font-size: calc(1.5vw + 1rem);
 	text-transform: capitalize;
 	letter-spacing: .5rem;
-    transition: 1s;
+	transition: 1s;
 	#profile-image {
 		width: clamp(10rem, 40%, 20rem);
 		border-radius: 50%;
@@ -143,10 +153,13 @@ section {
 
 	#social-icons img {
 		transition: transform .5s;
+		font-size: 2rem;
 	}
 
 	#social-icons img:hover {
 		transform: rotateX(360deg);
+		box-shadow: 0px 0px 7px 3px palegreen;
+		border-radius: 100px;
 	}
 }
 
@@ -160,11 +173,11 @@ section {
 //About me*************
 #about-me {
 	p {
-        font-size: medium;
-        word-break: break-word;
-        overflow: wrap;
-        margin: auto;
-        padding: 1rem 4rem;
+		font-size: medium;
+		word-break: break-word;
+		overflow: wrap;
+		margin: auto;
+		padding: 1rem 4rem;
 	}
 }
 
@@ -172,36 +185,22 @@ section {
 #skills {
 	color: white;
 	background: var(--color-primary);
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	.flex-row {
 		display: flex;
-		flex: 1 1 10rem;
+		flex: 1 1 18rem;
 		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
-	.card {
-		margin: 1rem auto;
-		max-width: 20rem;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		justify-content: space-between;
-        transition: .5s;
-		color: white;
-		.icon,
-		.heading, svg {
-			font-size: 1.5rem;
-			fill: white;
-			place-self: center;
-			font-weight: 900;
-			letter-spacing: .5rem;
-			padding: .5rem 0;
-		}
+	.skill-icons {
+		height: 10em;
+		margin: 3rem;
+		transition: .5s;
 	}
-	.card:hover {
-        background-color: #34287f;
-		box-shadow: 2px -1px 25px 2px rgba(255, 255, 255, 0.41);
-		-webkit-box-shadow: 2px -1px 25px 2px rgba(255, 255, 255, 0.41);
-		-moz-box-shadow: 2px -1px 25px 2px rgba(255, 255, 255, 0.41);
+	.skill-icons:hover {
+		height: 12em;
 	}
 }
 
@@ -211,41 +210,42 @@ section {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    display: flex;
-    flex: 1 1 4rem;
+	display: flex;
+	flex: 1 1 4rem;
 	flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	padding-bottom: .5rem;
 
 	h2 {
 		padding-top: 12rem;
 		padding-bottom: 4rem;
 	}
-    .card {
-        padding: 1rem 1.5rem;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        margin: 0 2rem;
-    }
+	.card {
+		padding: 1rem 1.5rem;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		margin: 0 2rem;
+	}
 
-    button {
-        padding: 1rem;
-        border-radius: 4px;
-        background: #5c47d5;
-        font-family: 'Poppins';
-        border: 1px;
-        text-transform: uppercase;
-        letter-spacing: .5rem;
-        font-weight: 600;
+	button {
+		padding: 1rem;
+		border-radius: 4px;
+		background: #5c47d5;
+		font-family: 'Poppins';
+		border: 1px;
+		text-transform: uppercase;
+		letter-spacing: .5rem;
+		font-weight: 600;
 		color: white;
-    }
+	}
 }
 
 // *********MIXINS********************
 @media (max-width: 600px) {
-    section, #about-me p {
-        padding: 1rem;
-    }
-  }
+	section,
+	#about-me p {
+		padding: 1rem;
+	}
+}
