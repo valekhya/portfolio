@@ -58,11 +58,16 @@ section {
 		text-shadow: 0px 0px 6px #cdcdcd;
 	}
 }
+.heading {
+	font-size: calc(1vw + 1.75rem);
+	text-transform: uppercase;
+	font-weight: 500;
+}
 .sub-title {
-	font-size: small;
+	font-size: calc(1vw + .5rem);
 }
 .bold {
-	font-weight: 900;
+	font-weight: 500;
 }
 .card {
 	background-color: var(--container);
@@ -168,7 +173,7 @@ section {
 
 	#social-icons img:hover {
 		transform: rotateX(360deg);
-		box-shadow: 0px 0px 7px 3px palegreen;
+		box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.41);
 		border-radius: 100px;
 	}
 }
@@ -208,9 +213,6 @@ section {
 		height: 10em;
 		margin: 3rem;
 		transition: .5s;
-	}
-	.skill-icons:hover {
-		height: 12em;
 	}
 }
 

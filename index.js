@@ -1,11 +1,8 @@
 const hero = popmotion.styler(document.querySelector('#hero'));
-const profileImage = popmotion.styler(document.querySelector('#profile-image'));
 const contactMe = popmotion.styler(document.querySelector('#contact-me-form'));
 
-const ballXY = popmotion.value({ x: 0, y: 0 }, profileImage.set);
-let activeAction;
-let pointerTracker;
-
+const skillsDiv = document.querySelector('.flex-row');
+const skillsIcon = skillsDiv.querySelectorAll('.skill-icons');
 
 // Hero container ****************************************
 popmotion.tween({
@@ -26,7 +23,7 @@ popmotion.tween({
 // Contact me*********************************
 
 // Default
-$(function() {
+$(function () {
     popmotion.tween({
         from: {
             scale: 1,
@@ -35,12 +32,12 @@ $(function() {
             scale: .9,
         },
         duration: 500
-    
+
     }).start(contactMe.set);
 })
 
 // Scale up
-$('#contact-me-form').on("mouseenter", function() {
+$('#contact-me-form').on("mouseenter", function () {
     popmotion.tween({
         from: {
             scale: .9,
@@ -49,12 +46,12 @@ $('#contact-me-form').on("mouseenter", function() {
             scale: 1,
         },
         duration: 500
-    
+
     }).start(contactMe.set);
 });
 
 // Scale Down
-$('#contact-me-form').on("mouseleave", function() {
+$('#contact-me-form').on("mouseleave", function () {
     popmotion.tween({
         from: {
             scale: 1,
@@ -63,7 +60,6 @@ $('#contact-me-form').on("mouseleave", function() {
             scale: .9,
         },
         duration: 500
-    
+
     }).start(contactMe.set);
 });
-
