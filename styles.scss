@@ -12,9 +12,6 @@ html {
 body {
 	height: 100vh;
 	font-family: 'Poppins', sans-serif !important;
-	// background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	// background-size: 400% 400%;
-	// animation: gradient 15s ease infinite;
 	line-height: 1.5;
 }
 
@@ -89,7 +86,7 @@ section {
 }
 
 .animate-keywords {
-	color: #5c47d5;
+	color: var(--color-primary);
 	font-weight: 900;
 }
 
@@ -267,7 +264,7 @@ section {
 	button {
 		padding: 1rem;
 		border-radius: 4px;
-		background: #5c47d5;
+		background: var(--color-primary);
 		font-family: 'Poppins';
 		border: 1px;
 		text-transform: uppercase;
@@ -279,15 +276,13 @@ section {
 
 // *********MIXINS********************
 @media only screen and (max-width: 600px) {
-
 	section,
 	#about-me p {
 		padding: 1rem;
 		min-height: fit-content;
 	}
-
 	#hero,
 	#projects {
-		height: 70vh;
+		height: 95vh;
 	}
 }

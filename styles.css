@@ -96,7 +96,7 @@ section h2 {
 }
 
 .animate-keywords {
-  color: #5c47d5;
+  color: var(--color-primary);
   font-weight: 900;
 }
 
@@ -312,7 +312,7 @@ section h2 {
 #contact-me button {
   padding: 1rem;
   border-radius: 4px;
-  background: #5c47d5;
+  background: var(--color-primary);
   font-family: 'Poppins';
   border: 1px;
   text-transform: uppercase;
@@ -331,7 +331,7 @@ section h2 {
   }
   #hero,
   #projects {
-    height: 70vh;
+    height: 95vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
